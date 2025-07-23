@@ -39,6 +39,11 @@ const myWorks = [
     name: "E-commerce App UI",
     description: "A stylish and responsive e-commerce app UI built with Flutter, showcasing product listings and shopping screens.",
   },
+  {
+    link: "https://github.com/iamankitm05/easy_tech_flutter",
+    name: "EasyTest Flutter App",
+    description: "A full-featured Flutter learning app with email/password authentication, teacher, mock test, profile management, and more.",
+  },
 ];
 
 window.onload = () => {

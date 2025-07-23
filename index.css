@@ -46,7 +46,8 @@ header {
 nav ul {
   display: flex;
   list-style: none;
-  gap: 2rem;
+  gap: 1rem;
+  align-items: center;
 }
 
 nav a {
@@ -71,7 +72,7 @@ section {
   padding-top: 7rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 850px) {
   nav ul {
     display: none;
     flex-direction: column;
@@ -82,6 +83,7 @@ section {
     width: 200px;
     border: 1px solid var(--card-border-color);
     padding: 1rem;
+    align-items: start;
   }
 
   nav ul.active {
@@ -91,6 +93,41 @@ section {
   .mobile-nav-toggle {
     display: block;
   }
+}
+
+.badge-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 14px;
+  font-size: 14px;
+  font-weight: 600;
+  border: 2px solid;
+  border-radius: 9999px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.badge-button .icon {
+  width: 16px;
+  height: 16px;
+}
+
+.github {
+  color: white;
+  border-color: #333;
+  background-color: #333;
+}
+
+.linkedin {
+  color: white;
+  border-color: #0a66c2;
+  background-color: #0a66c2;
+}
+
+.linkedin:hover,
+.github:hover {
+  color: white;
 }
 
 .hero {
