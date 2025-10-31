@@ -1,7 +1,7 @@
 const myWorks = [
   {
     link: "https://play.google.com/store/apps/details?id=com.teamvx.app&pcampaignid=web_share",
-    name: "Team Vx",
+    name: "TeamVx Network",
     description: "A gig marketplace app built with Flutter & Firebase. Implemented role-based login (Phone, Google), event applications, and admin dashboards. Published on Play Store with 100+ active users.",
     image: 'https://play-lh.googleusercontent.com/QI8usY_K_TBPS0oRFWlvTpKg8Koi0zMCF3R4_r99zcdqusa4-vY6EwqqNzZGFClKNBrWdum_Ml0Tjaq9R1TFYA=w240-h480-rw',
   },
