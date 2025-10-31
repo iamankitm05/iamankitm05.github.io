@@ -1,5 +1,11 @@
 const myWorks = [
   {
+    link: "https://play.google.com/store/apps/details?id=com.teamvx.app&pcampaignid=web_share",
+    name: "Team Vx",
+    description: "A gig marketplace app built with Flutter & Firebase. Implemented role-based login (Phone, Google), event applications, and admin dashboards. Published on Play Store with 100+ active users.",
+    image: 'https://play-lh.googleusercontent.com/QI8usY_K_TBPS0oRFWlvTpKg8Koi0zMCF3R4_r99zcdqusa4-vY6EwqqNzZGFClKNBrWdum_Ml0Tjaq9R1TFYA=w240-h480-rw',
+  },
+  {
     link: "https://www.indusappstore.com/apps/productivity/my-notes/io.github.ankitdotdev.my_notes?page=details&id=io.github.ankitdotdev.my_notes",
     name: "My Notes App",
     description: "A feature-rich Flutter notes app with theming, date-based organization, note creation, editing, completion, deletion, and filtering options.",
