@@ -12,18 +12,6 @@ const myWorks = [
     image: 'https://raw.githubusercontent.com/iamankitm05/my_notes/main/demo.png',
   },
   {
-    link: "https://github.com/iamankitm05/ecommerce_app_flutter",
-    name: "E-commerce App UI",
-    description: "A stylish and responsive e-commerce app UI built with Flutter, showcasing product listings and shopping screens.",
-    image: 'https://raw.githubusercontent.com/iamankitm05/ecommerce_app_flutter/main/demo.png'
-  },
-  {
-    link: "https://github.com/iamankitm05/whatsapp_clone_flutter",
-    name: "WhatsApp Clone UI",
-    description: "A clean and responsive WhatsApp-inspired user interface built with Flutter.",
-    image: 'https://raw.githubusercontent.com/iamankitm05/whatsapp_clone_flutter/main/demo.png',
-  },
-  {
     link: "https://play.google.com/store/apps/details?id=com.music_player.music_player&pcampaignid=web_share",
     name: "Music Player App",
     description: "A Flutter-based music player UI with local audio playback, dark/light themes, and customizable color options.",
@@ -40,6 +28,18 @@ const myWorks = [
     name: "Are You Colorblind",
     description: "A feature-rich Flutter app that uses the Ishihara test to help users check for color blindness with themed UI and smooth interactions.",
     image: '/images/are you color blind.png'
+  },
+   {
+    link: "https://github.com/iamankitm05/ecommerce_app_flutter",
+    name: "E-commerce App UI",
+    description: "A stylish and responsive e-commerce app UI built with Flutter, showcasing product listings and shopping screens.",
+    image: 'https://raw.githubusercontent.com/iamankitm05/ecommerce_app_flutter/main/demo.png'
+  },
+  {
+    link: "https://github.com/iamankitm05/whatsapp_clone_flutter",
+    name: "WhatsApp Clone UI",
+    description: "A clean and responsive WhatsApp-inspired user interface built with Flutter.",
+    image: 'https://raw.githubusercontent.com/iamankitm05/whatsapp_clone_flutter/main/demo.png',
   },
   {
     link: "https://github.com/iamankitm05/animations_flutter",
