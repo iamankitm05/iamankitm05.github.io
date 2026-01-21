@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700&family=Space+Mono:wght@400;700&display=swap');
+@import url('animations.css');
+
+/* Core Styles */
+body {
+    font-family: 'Outfit', sans-serif;
+    overflow-x: hidden;
+    /* Prevent horizontal scroll */
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0a0a0f;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #1a1a2e;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #536DFE;
+}
+
+/* Utility Classes */
+.animate-fade-in-up {
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.glass-card {
+    background: rgba(17, 17, 26, 0.7);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.glow-text {
+    text-shadow: 0 0 10px rgba(83, 109, 254, 0.7);
+}
+
+/* Cursor Typing Effect */
+.cursor::after {
+    content: '|';
+    animation: blink 1s step-start infinite;
+    color: #536DFE;
+}
+
+/* Mobile Menu */
+#mobile-menu {
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 50;
+    /* Ensure on top */
+}
+
+#menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 40;
+    /* Behind drawer */
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(8px);
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+#menu-overlay.open {
+    display: block;
+    opacity: 1;
+}
+
+/* Desktop Menu Fix: Ensure button is hidden on medium screens and up */
+@media (min-width: 768px) {
+    #menu-btn {
+        display: none !important;
+        /* Force hide */
+    }
+}
+
+/* Project Card Refinements */
+.project-card {
+    transition: border-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.project-card:hover {
+    border-color: rgba(83, 109, 254, 0.5);
+    transform: translateY(-4px);
+    box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+}
+
+/* Firefly Styling */
+.firefly {
+    position: fixed;
+    border-radius: 50%;
+    pointer-events: auto;
+    /* Allow interaction */
+    cursor: grab;
+    z-index: 50;
+    /* In front of Hero Content (10), behind Nav (50 is same, might need adjustment if Nav is vital, but Nav is fixed) */
+    /* If Nav is z-50, Firefly z-50 might overlap. Let's make Firefly z-20 to be above content but below Nav? */
+    /* User said "make fireflse front it not shoing". If Nav has BG, it covers them. */
+    /* But Fireflies are fixed. */
+    mix-blend-mode: screen;
+}
+
+.firefly:active {
+    cursor: grabbing;
+}
