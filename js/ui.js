@@ -5,7 +5,7 @@ const phrases = ["Mobile App Developer", "Flutter Expert", "iOS Engineer", "Solo
 let phraseIndex = 0;
 let charIndex = 0;
 let isDeleting = false;
-let typeSpeed = 100;
+let typeSpeed = 150;
 
 function type() {
     const currentPhrase = phrases[phraseIndex];
@@ -14,11 +14,11 @@ function type() {
     if (isDeleting) {
         typingText.textContent = currentPhrase.substring(0, charIndex - 1);
         charIndex--;
-        typeSpeed = 50;
+        typeSpeed = 100;
     } else {
         typingText.textContent = currentPhrase.substring(0, charIndex + 1);
         charIndex++;
-        typeSpeed = 100;
+        typeSpeed = 150;
     }
 
     if (!isDeleting && charIndex === currentPhrase.length) {
