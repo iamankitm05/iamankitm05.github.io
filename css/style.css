@@ -18,12 +18,12 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #1a1a2e;
+    background: #374151;
     border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #536DFE;
+    background: #4b5563;
 }
 
 /* Utility Classes */
@@ -94,23 +94,4 @@ body {
     border-color: rgba(83, 109, 254, 0.5);
     transform: translateY(-4px);
     box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
-}
-
-/* Firefly Styling */
-.firefly {
-    position: fixed;
-    border-radius: 50%;
-    pointer-events: auto;
-    /* Allow interaction */
-    cursor: grab;
-    z-index: 50;
-    /* In front of Hero Content (10), behind Nav (50 is same, might need adjustment if Nav is vital, but Nav is fixed) */
-    /* If Nav is z-50, Firefly z-50 might overlap. Let's make Firefly z-20 to be above content but below Nav? */
-    /* User said "make fireflse front it not shoing". If Nav has BG, it covers them. */
-    /* But Fireflies are fixed. */
-    mix-blend-mode: screen;
-}
-
-.firefly:active {
-    cursor: grabbing;
 }

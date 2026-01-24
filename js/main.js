@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Render Data
     renderProjects();
 
-    // Initialize Interactive Fireflies
-    // 15 fireflies for a good balance
-    new FireflyController(15);
+    // Initialize Star Background
+    // 100 stars for a good universe feel
+    new StarBackground(150);
 });
