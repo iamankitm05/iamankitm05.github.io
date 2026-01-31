@@ -1,7 +1,7 @@
 // --- Typing Animation ---
 const typingText = document.getElementById('typing-text');
 // Note: Use a more standard phrase set or allow it to be passed in
-const phrases = ["Mobile App Developer", "Flutter Expert", "iOS Engineer", "Solo Leveler"];
+const phrases = ["Mobile App Developer", "Flutter Expert", "Android Developer", "iOS Engineer", "Solo Leveler"];
 let phraseIndex = 0;
 let charIndex = 0;
 let isDeleting = false;
@@ -114,7 +114,6 @@ function renderProjects() {
     if (!projectsGrid || typeof window.projects === 'undefined') return;
 
     projectsGrid.innerHTML = window.projects.map(project => {
-        const imageSrc = (project.image && project.image.trim() !== "") ? project.image : window.defaultProjectImage;
         const links = project.links || {};
         let actionButtons = '';
 
@@ -162,16 +161,10 @@ function renderProjects() {
 
         return `
         <div class="project-card group relative rounded-xl overflow-hidden bg-dark-800 border border-white/5 flex flex-col h-full hover:border-primary/40">
-            <!-- Image -->
-            <div class="relative h-48 overflow-hidden shrink-0 bg-dark-900">
-                <div class="absolute inset-0 bg-dark-900/10 group-hover:bg-transparent transition-colors z-10"></div>
-                <img src="${imageSrc}" alt="${project.title}" onerror="this.src='assets/logo.png'" class="w-full h-full object-cover transform transition-transform duration-500">
-            </div>
-            
             <!-- Content -->
             <div class="p-6 flex flex-col flex-grow">
-                <h3 class="text-xl font-bold mb-2 group-hover:text-primary transition-colors">${project.title}</h3>
-                <p class="text-gray-400 text-sm mb-4 line-clamp-3 leading-relaxed flex-grow">${project.description}</p>
+                <h3 class="text-xl font-bold mb-2 group-hover:text-primary transition-colors text-white">${project.title}</h3>
+                <p class="text-gray-400 text-sm mb-4 line-clamp-4 leading-relaxed flex-grow">${project.description}</p>
                 
                 <div class="flex flex-wrap gap-2 mb-6">
                     ${project.tags.map(tag => `
@@ -181,7 +174,7 @@ function renderProjects() {
                     `).join('')}
                 </div>
 
-                <div class="flex flex-wrap items-center gap-2 mt-auto pt-4 border-t border-white/5">
+                <div class="flex flex-wrap items-center gap-2 mt-auto pt-4 border-t border-white/10">
                     ${actionButtons}
                 </div>
             </div>

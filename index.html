@@ -40,17 +40,17 @@
                 extend: {
                     colors: {
                         dark: {
-                            900: '#0a0a0f',
-                            800: '#11111a',
-                            700: '#1a1a2e'
+                            900: '#050508',
+                            800: '#0a0a0f',
+                            700: '#11111a'
                         },
                         primary: '#536DFE',   /* Solo Leveling Blue */
-                        secondary: '#69F0AE', /* Healing Green */
+                        secondary: '#00A693', /* Healing Green */
                         error: '#F44336'
                     },
                     boxShadow: {
                         'glow-primary': '0 0 20px rgba(83, 109, 254, 0.5)',
-                        'glow-secondary': '0 0 20px rgba(105, 240, 174, 0.5)',
+                        'glow-secondary': '0 0 20px rgba(0, 166, 147, 0.5)',
                     }
                 }
             }
@@ -71,9 +71,8 @@
     <nav id="navbar"
         class="fixed w-full z-50 transition-all duration-300 bg-dark-900/80 backdrop-blur-md border-b border-white/5">
         <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="#"
-                class="text-2xl font-bold font-mono text-white tracking-wider hover:text-primary transition-colors">
-                ANKIT<span class="text-primary">.DEV</span>
+            <a href="#" class="text-2xl font-bold font-mono text-white tracking-wider transition-colors">
+                Ankit Kumar
             </a>
 
             <!-- Desktop Menu -->
@@ -144,40 +143,44 @@
         </div>
     </div>
 
-    <section id="home" class="min-h-screen flex items-center relative overflow-hidden pt-20 bg-transparent">
+    <section id="home" class="min-h-screen flex items-center relative overflow-hidden pt-12 bg-transparent">
         <!-- Background Image with Overlay -->
         <div class="absolute inset-0 z-[1]">
             <div class="absolute inset-0 bg-gradient-to-r from-dark-900 via-dark-900/95 to-dark-900/40 z-[2]"></div>
-            <img src="assets/hero.jpg" alt="Background" class="w-full h-full object-cover">
+            <img src="assets/hero_enhanced.png" alt="Background" class="w-full h-full object-cover">
         </div>
 
         <div class="container mx-auto px-6 relative z-[10]">
             <div class="max-w-3xl mx-auto text-center">
                 <!-- System Alert Badge (Reduced size text-xs) -->
                 <div
-                    class="mb-6 inline-block px-4 py-1 rounded-full border border-secondary/30 bg-secondary/5 text-secondary text-xs font-mono tracking-widest uppercase animate-fade-in-up">
-                    System Alert: Player Awakened
+                    class="mb-8 inline-flex items-center gap-3 px-4 py-2 rounded-lg border border-primary/30 bg-primary/5 backdrop-blur-sm animate-fade-in-up mx-auto">
+                    <span class="relative flex h-2 w-2">
+                        <span
+                            class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+                    </span>
+                    <span class="text-blue-100 text-xs font-mono font-bold tracking-widest uppercase">
+                        System Alert: Player Awakened
+                    </span>
                 </div>
 
-                <h1 class="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight animate-fade-in-up"
+                <h1 class="text-3xl md:text-5xl font-bold text-white mb-6 leading-tight animate-fade-in-up"
                     style="animation-delay: 0.1s;">
-                    Hello, I'm <br>
-                    <span class="text-primary">Ankit Kumar Ojha</span>
+                    Hey, I’m <span class="text-primary">Ankit 👋</span>
                 </h1>
 
-                <!-- Typing Animation Restored -->
-                <div class="flex flex-wrap items-center justify-center gap-x-3 text-2xl md:text-4xl text-gray-300 mb-8 font-light animate-fade-in-up"
+                <p class="max-w-xl mx-auto text-gray-300 mb-6 text-lg leading-relaxed animate-fade-in-up"
                     style="animation-delay: 0.2s;">
-                    <span>I am a</span>
-                    <span id="typing-text" class="font-bold text-white"></span>
+                    A mobile application developer who loves building elegant, efficient, and user-centric apps.
+                </p>
+
+                <!-- Typing Animation Repositioned -->
+                <div class="flex flex-wrap items-center justify-center gap-x-3 text-xl md:text-2xl text-white mb-10 font-bold animate-fade-in-up"
+                    style="animation-delay: 0.3s;">
+                    <span id="typing-text"></span>
                     <span class="cursor"></span>
                 </div>
-
-                <p class="max-w-xl mx-auto text-gray-400 mb-10 text-lg leading-relaxed animate-fade-in-up"
-                    style="animation-delay: 0.3s;">
-                    Crafting distinctive mobile experiences with native iOS, Flutter, and robust backend integrations.
-                    Leveling up applications one line of code at a time.
-                </p>
 
                 <div class="flex flex-wrap justify-center gap-6 animate-fade-in-up" style="animation-delay: 0.4s;">
                     <!-- Removed shadow-glow-primary -->
@@ -228,14 +231,14 @@
                     <!-- Stats / Highlights -->
                     <div class="grid grid-cols-2 gap-6 max-w-lg mx-auto">
                         <div
-                            class="p-4 rounded-xl bg-dark-800 border border-white/5 group hover:border-primary/30 transition-colors">
+                            class="p-4 rounded-xl bg-dark-800/80 border border-white/10 group hover:border-primary/30 transition-colors">
                             <span class="block text-3xl font-bold text-primary mb-1">3+</span>
-                            <span class="text-sm text-gray-500 group-hover:text-gray-300">Years Exp.</span>
+                            <span class="text-sm text-gray-400 group-hover:text-gray-200">Years Exp.</span>
                         </div>
                         <div
-                            class="p-4 rounded-xl bg-dark-800 border border-white/5 group hover:border-secondary/30 transition-colors">
+                            class="p-4 rounded-xl bg-dark-800/80 border border-white/10 group hover:border-secondary/30 transition-colors">
                             <span class="block text-3xl font-bold text-secondary mb-1">20+</span>
-                            <span class="text-sm text-gray-500 group-hover:text-gray-300">Quests Completed</span>
+                            <span class="text-sm text-gray-400 group-hover:text-gray-200">Quests Completed</span>
                         </div>
                     </div>
                 </div>
@@ -443,13 +446,9 @@
 
                 <!-- Left: Profile & Vision -->
                 <div class="text-center lg:text-left w-full lg:w-1/2">
-                    <div class="flex flex-col lg:flex-row items-center gap-6 mb-6 justify-center lg:justify-start">
-                        <img draggable="false" src="assets/profile.jpg" alt="Ankit Profile"
-                            class="w-24 h-24 rounded-2xl object-cover cursor-pointer">
-                        <div>
-                            <h2 class="text-3xl font-bold text-white mb-1">Ankit Kumar Ojha</h2>
-                            <p class="text-primary font-medium tracking-wide">Mobile App Developer</p>
-                        </div>
+                    <div class="mb-6">
+                        <h2 class="text-3xl font-bold text-white mb-1">Ankit Kumar Ojha</h2>
+                        <p class="text-primary font-medium tracking-wide">Mobile App Developer</p>
                     </div>
                     <p class="text-gray-400 max-w-md text-lg leading-relaxed mx-auto lg:mx-0">
                         Crafting digital experiences with precision and passion. Let's turn your ideas into reality.
