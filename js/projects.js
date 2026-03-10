@@ -50,7 +50,7 @@ const projects = [
         }
     },
     {
-        title: "Are You Colorblind",
+        title: "Color blind assist",
         description: "A feature-rich Flutter app that uses the Ishihara test to help users check for color blindness with themed UI and smooth interactions.",
         tags: ["Flutter", "Health", "Testing"],
         links: {
@@ -63,40 +63,6 @@ const projects = [
         tags: ["Flutter", "E-commerce", "Mock UI"],
         links: {
             source: "https://github.com/iamankitm05/ecommerce_app_flutter"
-        }
-    },
-    {
-        title: "WhatsApp Clone UI",
-        description: "A clean and responsive WhatsApp-inspired user interface built with Flutter.",
-        tags: ["Flutter", "Clone", "Messaging UI"],
-        links: {
-            source: "https://github.com/iamankitm05/whatsapp_clone_flutter",
-            apk: "https://github.com/iamankitm05/whatsapp_clone_flutter/releases/download/v.0.1.1/app-release.apk"
-        }
-    },
-    {
-        title: "Animation Playground",
-        description: "A simple Flutter animation project featuring bouncing balls and interactive controls to manipulate their movement.",
-        tags: ["Flutter", "Animations", "Physics"],
-        links: {
-            source: "https://github.com/iamankitm05/animations_flutter",
-            apk: "https://github.com/ankitdotdev/animations_flutter/releases/download/apk-v1.0.0/app-release.apk"
-        }
-    },
-    {
-        title: "Queezy App UI",
-        description: "A sleek and modern quiz app user interface designed in Flutter.",
-        tags: ["Flutter", "Quiz App", "UI/UX"],
-        links: {
-            source: "https://github.com/iamankitm05/queezy_flutter_app"
-        }
-    },
-    {
-        title: "EasyTest Flutter App",
-        description: "A full-featured Flutter learning app with email/password authentication, teacher, mock test, profile management, and more.",
-        tags: ["Flutter", "EdTech", "LMS"],
-        links: {
-            source: "https://github.com/iamankitm05/easy_tech_flutter"
         }
     }
 ];
