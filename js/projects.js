@@ -18,6 +18,16 @@ Project Data Structure / Key Reference:
 
 const projects = [
     {
+        title: "Tic Tac Toe Multiplayer Game",
+        description: "🎮 A modern real-time multiplayer Tic Tac Toe game built with Flutter & Firebase for Android and Web. Create private rooms, challenge friends online, join live lobbies, or watch matches as a guest spectator — all with seamless real-time gameplay ⚡",
+        tags: ["Flutter", "Dart", "Firebase", "Multiplayer", "Realtime", "Gaming"],
+        links: {
+            "source": "https://github.com/iamankitm05/tic_tac_toe_board_game",
+            view: "https://tictactoeboard.web.app/",
+            apk: "https://github.com/iamankitm05/tic_tac_toe_board_game/releases/download/tic-tac-toe-v1.0.0/Tic-Tac-Toe-V1.0.0"
+        }
+    },
+    {
         title: "TeamVx Network",
         description: "A gig marketplace app built with Flutter & Firebase. Implemented role-based login (Phone, Google), event applications, and admin dashboards. Published on Play Store with 100+ active users.",
         tags: ["Flutter", "Firebase", "Gig Economy"],
