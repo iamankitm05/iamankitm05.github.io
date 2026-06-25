@@ -18,6 +18,14 @@ Project Data Structure / Key Reference:
 
 const projects = [
     {
+        title: "DB Lite",
+        description: "DB Lite is a fast, lightweight, and easy-to-use SQLite database manager that lets you create, explore, edit, and manage database files directly from your Android device. Whether you're a developer debugging an app, a student learning SQL, or simply working with database files on the go, DB Lite makes database management simple and accessible.", 
+        tags: ["Flutter", "Dart", "SQLite", "Git", "GitHub", "Learning"],
+        links: {
+            playstore: "https://www.indusappstore.com/apps/productivity/db-lite/me.ankit.dblite?page=details&id=me.ankit.dblite”
+        }
+    },
+    {
         title: "Tic Tac Toe Multiplayer Game",
         description: "🎮 A modern real-time multiplayer Tic Tac Toe game built with Flutter & Firebase for Android and Web. Create private rooms, challenge friends online, join live lobbies, or watch matches as a guest spectator — all with seamless real-time gameplay ⚡",
         tags: ["Flutter", "Dart", "Firebase", "Multiplayer", "Realtime", "Gaming"],
